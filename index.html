@@ -1,159 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
+.video-card {
+  grid-column: span 2;
+}
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marianela Balderrama | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-</head>
+.carousel iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 16px;
+}
 
-<body>
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
 
-<header class="hero">
-  <h1>Marianela Balderrama</h1>
-
-  <p>
-    Diseño digital · Animación · Visual storytelling · Proyectos interactivos
-  </p>
-
-  <div class="hero-buttons">
-    <a href="#proyectos">Ver proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </div>
-</header>
-
-<section id="proyectos">
-
-<h2>Proyectos destacados</h2>
-
-<div class="projects-grid">
-
-  <!-- NETLIFY -->
-  <article class="project-card">
-    <h3>Proyecto interactivo</h3>
-
-    <p>
-      Proyecto de representación interactiva de datos y experiencia visual web.
-    </p>
-
-    <p>
-      <strong>Herramientas:</strong>
-      HTML · CSS · JavaScript · Netlify
-    </p>
-
-    <a
-      href="PEGAR_LINK_NETLIFY"
-      target="_blank">
-      Ver proyecto →
-    </a>
-  </article>
-
-
-  <!-- YOUTUBE -->
-  <article class="project-card">
-
-    <h3>Videos destacados</h3>
-
-    <p>
-      Selección de proyectos audiovisuales y animaciones.
-    </p>
-
-    <div class="video-gallery">
-
-      <iframe
-        src="https://www.youtube.com/embed/A0DOnZBaeew"
-        title="Natalidad"
-        allowfullscreen>
-      </iframe>
-
-      <iframe
-        src="https://www.youtube.com/embed/1_ttidViLvo"
-        title="Astronauta"
-        allowfullscreen>
-      </iframe>
-
-      <iframe
-        src="https://www.youtube.com/embed/Oe3F9LMyWNg"
-        title="Clemente"
-        allowfullscreen>
-      </iframe>
-
-      <iframe
-        src="https://www.youtube.com/embed/t577JMNsdhM"
-        title="My Dearest"
-        allowfullscreen>
-      </iframe>
-
-    </div>
-
-  </article>
-
-
-  <!-- INSTAGRAM -->
-  <article class="project-card">
-    <h3>Instagram educativo</h3>
-
-    <p>
-      Contenido visual y educativo sobre idioma y cultura coreana.
-    </p>
-
-    <a
-      href="PEGAR_LINK_INSTAGRAM"
-      target="_blank">
-      Ver Instagram →
-    </a>
-  </article>
-
-
-  <!-- BEHANCE -->
-  <article class="project-card">
-    <h3>Behance</h3>
-
-    <p>
-      Selección de diseño digital, piezas visuales y proyectos creativos.
-    </p>
-
-    <a
-      href="PEGAR_LINK_BEHANCE"
-      target="_blank">
-      Ver Behance →
-    </a>
-  </article>
-
-</div>
-
-</section>
-
-
-<section id="sobre-mi">
-
-<h2>Sobre mí</h2>
-
-<p>
-Soy un perfil creativo con experiencia en diseño digital,
-animación, contenido visual y proyectos interactivos.
-</p>
-
-</section>
-
-
-<section id="contacto">
-
-<h2>Contacto</h2>
-
-<p>
-Email:
-<a href="mailto:malemza24@hotmail.com">
-malemza24@hotmail.com
-</a>
-</p>
-
-</section>
-
-<footer>
-© 2026 Marianela Balderrama
-</footer>
-
-</body>
-</html>
+.carousel-buttons button {
+  border: none;
+  background: #1f1f1f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
