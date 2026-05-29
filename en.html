@@ -11,7 +11,6 @@
 <body>
 
 <header class="hero">
-
   <div class="language-switch">
     <a href="index.html">ES</a>
     <span>·</span>
@@ -31,16 +30,13 @@
       Download Resume
     </a>
   </div>
-
 </header>
 
 
 <section id="sobre-mi">
-
   <div class="about-card">
 
     <div>
-
       <h2>About Me</h2>
 
       <p>
@@ -53,244 +49,34 @@
         aesthetic sensitivity and technology, especially in areas connected
         to audiovisual media, Korean culture, education and visual storytelling.
       </p>
-
     </div>
 
     <div id="contacto">
-
       <h2>Contact</h2>
 
-      <p>
-        Email:
-        <a href="mailto:malemza24@hotmail.com">
-          malemza24@hotmail.com
+      <div class="contact-row">
+        <a href="mailto:malemza24@hotmail.com" class="contact-inline">
+          <span>malemza24@hotmail.com</span>
+          <img src="iconomail.png" alt="Email" class="contact-icon">
         </a>
-      </p>
 
-      <p>
-        LinkedIn:
+        <span class="contact-divider">·</span>
+
         <a
           href="https://www.linkedin.com/in/marianela-balderrama-0708612a2/"
-          target="_blank">
-          View profile
+          target="_blank"
+          class="contact-inline">
+          <span>LinkedIn</span>
+          <img src="icono in.png" alt="LinkedIn" class="contact-icon">
         </a>
-      </p>
-
-      <p>
-        Resume:
-        <a
-          href="Marianela_Balderrama_CV_Flagship_EN.pdf"
-          target="_blank">
-          Download PDF
-        </a>
-      </p>
-
+      </div>
     </div>
 
   </div>
-
-</section>
-
-
-<section id="proyectos">
-
-  <h2>Featured Projects</h2>
-
-  <div class="projects-grid">
-
-
-    <article class="project-card">
-
-      <h3>Interactive Project</h3>
-
-      <p>
-        Interactive birth-rate visualization project developed through
-        data storytelling, Adobe Animate animations and web publishing using Netlify.
-      </p>
-
-      <p>
-        <strong>Tools:</strong>
-        Adobe Animate · HTML · CSS · JavaScript · Netlify
-      </p>
-
-      <img
-        src="infografía natalidad.jpeg"
-        alt="Interactive Project"
-        class="card-image">
-
-      <a
-        href="https://natalidad.netlify.app/"
-        target="_blank">
-        View project →
-      </a>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <h3>Featured Videos</h3>
-
-      <p>
-        Selection of audiovisual projects, motion graphics,
-        3D animation and video editing.
-      </p>
-
-      <div class="carousel">
-
-        <iframe
-          id="videoFrame"
-          src="https://www.youtube.com/embed/A0DOnZBaeew"
-          title="Featured Video"
-          allowfullscreen>
-        </iframe>
-
-      </div>
-
-      <div class="carousel-buttons">
-        <button onclick="previousVideo()">← Previous</button>
-        <button onclick="nextVideo()">Next →</button>
-      </div>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <h3>Korea.net</h3>
-
-      <p>
-        Featured articles published as an Honorary Reporter,
-        combining writing, cultural communication and visual editing.
-      </p>
-
-      <p id="koreaTitle" class="article-title">
-        4 Korean dramas that inspire you to pursue your dreams
-      </p>
-
-      <div class="carousel">
-
-        <img
-          id="koreaFrame"
-          src="series motivacionales.jpeg"
-          alt="Korea.net Article"
-          class="card-image">
-
-      </div>
-
-      <a
-        id="koreaLink"
-        href="#"
-        target="_blank">
-        Read article →
-      </a>
-
-      <div class="carousel-buttons">
-        <button onclick="previousArticle()">← Previous</button>
-        <button onclick="nextArticle()">Next →</button>
-      </div>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <h3>Photography</h3>
-
-      <p>
-        Personal visual work focused on travel, nature,
-        urban environments and aesthetic sensitivity.
-      </p>
-
-      <img
-        src="fotografía.jpeg"
-        alt="Photography"
-        class="card-image">
-
-      <a
-        href="https://www.instagram.com/framed.by.mari/"
-        target="_blank">
-        View photography →
-      </a>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <h3>Educational Instagram</h3>
-
-      <p>
-        Visual and educational content focused on Korean
-        language and culture.
-      </p>
-
-      <img
-        src="instagram coreano.jpeg"
-        alt="Educational Instagram"
-        class="card-image">
-
-      <a
-        href="https://www.instagram.com/aprendiendo_coreano_juntos_/"
-        target="_blank">
-        View Instagram →
-      </a>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <h3>TechBe Solutions</h3>
-
-      <p>
-        Digital content and visual identity work
-        focused on technological solutions.
-      </p>
-
-      <img
-        src="instagram techbe.jpeg"
-        alt="TechBe"
-        class="card-image">
-
-      <a
-        href="https://www.instagram.com/techbesolutions/"
-        target="_blank">
-        View Instagram →
-      </a>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <h3>Behance</h3>
-
-      <p>
-        Selection of digital design, visual pieces,
-        3D work and creative projects.
-      </p>
-
-      <img
-        src="behance.png"
-        alt="Behance"
-        class="card-image">
-
-      <a
-        href="https://www.behance.net/malemza24"
-        target="_blank">
-        View Behance →
-      </a>
-
-    </article>
-
-  </div>
-
 </section>
 
 
 <section id="experience">
-
   <h2>Professional Experience</h2>
 
   <div class="experience-grid">
@@ -332,7 +118,183 @@
     </article>
 
   </div>
+</section>
 
+
+<section id="proyectos">
+
+  <h2>Featured Projects</h2>
+
+  <div class="projects-grid">
+
+    <article class="project-card">
+      <h3>Interactive Project</h3>
+
+      <p>
+        Interactive birth-rate visualization project developed through
+        data storytelling, Adobe Animate animations and web publishing using Netlify.
+      </p>
+
+      <p>
+        <strong>Tools:</strong>
+        Adobe Animate · HTML · CSS · JavaScript · Netlify
+      </p>
+
+      <img
+        src="infografía natalidad.jpeg"
+        alt="Interactive Project"
+        class="card-image">
+
+      <a
+        href="https://natalidad.netlify.app/"
+        target="_blank">
+        View project →
+      </a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Featured Videos</h3>
+
+      <p>
+        Selection of audiovisual projects, motion graphics,
+        3D animation and video editing.
+      </p>
+
+      <div class="carousel">
+        <iframe
+          id="videoFrame"
+          src="https://www.youtube.com/embed/A0DOnZBaeew"
+          title="Featured Video"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="previousVideo()">← Previous</button>
+        <button onclick="nextVideo()">Next →</button>
+      </div>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Korea.net</h3>
+
+      <p>
+        Featured articles published as an Honorary Reporter,
+        combining writing, cultural communication and visual editing.
+      </p>
+
+      <p id="koreaTitle" class="article-title">
+        4 Korean dramas that inspire you to pursue your dreams
+      </p>
+
+      <div class="carousel">
+        <img
+          id="koreaFrame"
+          src="series motivacionales.jpeg"
+          alt="Korea.net Article"
+          class="card-image">
+      </div>
+
+      <a
+        id="koreaLink"
+        href="#"
+        target="_blank">
+        Read article →
+      </a>
+
+      <div class="carousel-buttons">
+        <button onclick="previousArticle()">← Previous</button>
+        <button onclick="nextArticle()">Next →</button>
+      </div>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Photography</h3>
+
+      <p>
+        Personal visual work focused on travel, nature,
+        urban environments and aesthetic sensitivity.
+      </p>
+
+      <img
+        src="fotografía.jpeg"
+        alt="Photography"
+        class="card-image">
+
+      <a
+        href="https://www.instagram.com/framed.by.mari/"
+        target="_blank">
+        View photography →
+      </a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Educational Instagram</h3>
+
+      <p>
+        Visual and educational content focused on Korean
+        language and culture.
+      </p>
+
+      <img
+        src="instagram coreano.jpeg"
+        alt="Educational Instagram"
+        class="card-image">
+
+      <a
+        href="https://www.instagram.com/aprendiendo_coreano_juntos_/"
+        target="_blank">
+        View Instagram →
+      </a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>TechBe Solutions</h3>
+
+      <p>
+        Digital content and visual identity work
+        focused on technological solutions.
+      </p>
+
+      <img
+        src="instagram techbe.jpeg"
+        alt="TechBe"
+        class="card-image">
+
+      <a
+        href="https://www.instagram.com/techbesolutions/"
+        target="_blank">
+        View Instagram →
+      </a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Behance</h3>
+
+      <p>
+        Selection of digital design, visual pieces,
+        3D work and creative projects.
+      </p>
+
+      <img
+        src="behance.png"
+        alt="Behance"
+        class="card-image">
+
+      <a
+        href="https://www.behance.net/malemza24"
+        target="_blank">
+        View Behance →
+      </a>
+    </article>
+
+  </div>
 </section>
 
 
