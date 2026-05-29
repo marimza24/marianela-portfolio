@@ -211,20 +211,44 @@ h2 {
 .experience-card strong {
   color: #7b5f75;
 }
-.contact-link {
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 18px;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.contact-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #7b5f75;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
+}
+
+.contact-inline:hover {
+  opacity: .8;
 }
 
 .contact-icon {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
+}
+
+.contact-divider {
+  color: #7b5f75;
+  opacity: .45;
+  font-size: 18px;
 }
 
 /* FOOTER */
