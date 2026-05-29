@@ -1,30 +1,150 @@
-<article class="project-card">
-  <h3>Korea.net</h3>
+// =====================
+// VIDEOS DESTACADOS
+// =====================
 
-  <p>
-    Artículos destacados publicados como Honorary Reporter,
-    combinando escritura, comunicación cultural y edición visual.
-  </p>
+const videos = [
+  "A0DOnZBaeew",
+  "1_ttidViLvo",
+  "Oe3F9LMyWNg",
+  "t577JMNsdhM"
+];
 
-  <img
-    id="koreaFrame"
-    src="series motivacionales.jpeg"
-    alt="Artículo Korea.net"
-    class="card-image">
+let currentVideo = 0;
 
-  <p id="koreaTitle">
-    4 series coreanas que te motivan a luchar por tus sueños
-  </p>
+function showVideo() {
+  const frame = document.getElementById("videoFrame");
 
-  <a
-    id="koreaLink"
-    href="https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=197035"
-    target="_blank">
-    Ver artículo →
-  </a>
+  if (frame) {
+    frame.src =
+      `https://www.youtube.com/embed/${videos[currentVideo]}`;
+  }
+}
 
-  <div class="carousel-buttons">
-    <button onclick="previousArticle()">← Anterior</button>
-    <button onclick="nextArticle()">Siguiente →</button>
-  </div>
-</article>
+function nextVideo() {
+  currentVideo++;
+
+  if (currentVideo >= videos.length) {
+    currentVideo = 0;
+  }
+
+  showVideo();
+}
+
+function previousVideo() {
+  currentVideo--;
+
+  if (currentVideo < 0) {
+    currentVideo = videos.length - 1;
+  }
+
+  showVideo();
+}
+
+
+// =====================
+// KOREA.NET
+// =====================
+
+const articles = [
+
+  {
+    image: "series motivacionales.jpeg",
+    title: "4 series coreanas que te motivan a luchar por tus sueños",
+    link: "https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=197035"
+  },
+
+  {
+    image: "los 90.png",
+    title: "Volviendo a los años 90",
+    link: "https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=225686"
+  },
+
+  {
+    image: "comida coreana.png",
+    title: "Comida saludable, comida coreana",
+    link: "https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=211684"
+  },
+
+  {
+    image: "danyang.png",
+    title: "En el corazón de Corea: Danyang",
+    link: "https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=186084"
+  },
+
+  {
+    image: "uleungdo.png",
+    title: "Ulleungdo: una misteriosa isla en el Mar del Este",
+    link: "https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=187808"
+  },
+
+  {
+    image: "dramas histori.png",
+    title: "Una mirada diferente para disfrutar dramas históricos",
+    link: "https://spanish.korea.net/NewsFocus/HonoraryReporters/view?articleId=193436"
+  }
+
+];
+
+let currentArticle = 0;
+
+function showArticle() {
+
+  const image =
+    document.getElementById("koreaFrame");
+
+  const title =
+    document.getElementById("koreaTitle");
+
+  const link =
+    document.getElementById("koreaLink");
+
+  if (image && title && link) {
+
+    image.src =
+      articles[currentArticle].image;
+
+    title.textContent =
+      articles[currentArticle].title;
+
+    link.href =
+      articles[currentArticle].link;
+  }
+}
+
+function nextArticle() {
+
+  currentArticle++;
+
+  if (currentArticle >= articles.length) {
+    currentArticle = 0;
+  }
+
+  showArticle();
+}
+
+function previousArticle() {
+
+  currentArticle--;
+
+  if (currentArticle < 0) {
+    currentArticle =
+      articles.length - 1;
+  }
+
+  showArticle();
+}
+
+
+// =====================
+// INICIALIZAR
+// =====================
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+
+    showVideo();
+    showArticle();
+
+  }
+);
