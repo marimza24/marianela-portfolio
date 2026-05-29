@@ -11,6 +11,35 @@ body {
   padding: 90px 20px;
 }
 
+.language-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+
+.language-switch a {
+  color: #7b5f75;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.language-switch a:hover {
+  color: #2d2528;
+}
+
+.language-switch .active {
+  color: #2d2528;
+}
+
+.language-switch span {
+  opacity: .35;
+}
+
 .hero h1 {
   font-size: 56px;
   margin-bottom: 12px;
@@ -78,7 +107,6 @@ h2 {
   margin-bottom: 18px;
 }
 
-/* NUEVO — título dinámico de artículos Korea.net */
 .article-title {
   font-size: 24px;
   font-weight: 700;
@@ -159,7 +187,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-
   .projects-grid,
   .about-card {
     grid-template-columns: 1fr;
@@ -177,24 +204,7 @@ footer {
     flex-direction: column;
   }
 
-  /* Korea.net títulos mobile */
   .article-title {
     font-size: 20px;
   }
-  .language-switch {
-  text-align: right;
-  max-width: 1400px;
-  margin: 0 auto 35px;
-  font-weight: bold;
-}
-
-.language-switch a {
-  color: #2d2528;
-  text-decoration: none;
-  margin: 0 6px;
-}
-
-.language-switch span {
-  opacity: 0.5;
-}
 }
