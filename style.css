@@ -75,7 +75,7 @@ h2 {
 .project-card h3 {
   font-size: 26px;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .project-card p,
@@ -95,11 +95,11 @@ h2 {
 
 .card-image {
   width: 100%;
-  height: 260px;
+  height: 280px;
   object-fit: contain;
   background: #f7f2ec;
   border-radius: 18px;
-  margin-bottom: 24px;
+  margin: 20px 0 10px;
 }
 
 .carousel iframe {
@@ -107,7 +107,7 @@ h2 {
   aspect-ratio: 16 / 9;
   border: none;
   border-radius: 18px;
-  margin-bottom: 24px;
+  margin: 20px 0 10px;
 }
 
 .carousel-buttons {
@@ -160,7 +160,7 @@ footer {
   }
 
   .card-image {
-    height: 220px;
+    height: 230px;
   }
 
   .carousel-buttons {
