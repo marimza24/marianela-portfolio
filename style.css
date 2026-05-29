@@ -181,4 +181,20 @@ footer {
   .article-title {
     font-size: 20px;
   }
+  .language-switch {
+  text-align: right;
+  max-width: 1400px;
+  margin: 0 auto 35px;
+  font-weight: bold;
+}
+
+.language-switch a {
+  color: #2d2528;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.language-switch span {
+  opacity: 0.5;
+}
 }
