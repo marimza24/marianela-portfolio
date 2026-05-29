@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -12,179 +12,266 @@
 
 <header class="hero">
   <h1>Marianela Balderrama</h1>
-  <p>Diseño digital · Animación · Visual storytelling · Proyectos interactivos</p>
+
+  <p>
+    Digital Design · Animation · Visual Storytelling · Interactive Projects
+  </p>
 
   <div class="hero-buttons">
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Ver proyectos</a>
+    <a href="#sobre-mi">About</a>
+    <a href="#proyectos">Projects</a>
   </div>
 </header>
 
 <section id="sobre-mi">
+
   <div class="about-card">
+
     <div>
-      <h2>Sobre mí</h2>
+
+      <h2>About Me</h2>
+
       <p>
-        Soy una creativa digital argentina con experiencia en diseño visual,
-        animación, comunicación cultural, contenido educativo y proyectos interactivos.
+        I am an Argentine creative designer with experience in visual design,
+        animation, cultural communication, educational content and interactive projects.
       </p>
+
       <p>
-        Me interesa crear piezas que combinen narrativa, sensibilidad estética
-        y tecnología, especialmente en áreas vinculadas al audiovisual,
-        la cultura coreana, la educación y el storytelling visual.
+        I am interested in creating projects that combine storytelling,
+        aesthetic sensitivity and technology, especially in areas connected
+        to audiovisual media, Korean culture, education and visual storytelling.
       </p>
+
     </div>
 
     <div id="contacto">
-      <h2>Contacto</h2>
+
+      <h2>Contact</h2>
+
       <p>
         Email:
-        <a href="mailto:malemza24@hotmail.com">malemza24@hotmail.com</a>
+        <a href="mailto:malemza24@hotmail.com">
+          malemza24@hotmail.com
+        </a>
       </p>
+
     </div>
+
   </div>
+
 </section>
 
+
 <section id="proyectos">
-  <h2>Proyectos destacados</h2>
+
+  <h2>Featured Projects</h2>
 
   <div class="projects-grid">
 
-<article class="project-card">
-  <h3>Proyecto interactivo</h3>
 
-  <p>
-    Proyecto interactivo sobre natalidad, desarrollado con visualización de datos,
-    animaciones creadas en Adobe Animate y publicación web en Netlify.
-  </p>
-
-  <p>
-    <strong>Herramientas:</strong>
-    Adobe Animate · HTML · CSS · JavaScript · Netlify
-  </p>
-
-  <img src="infografía natalidad.jpeg"
-       alt="Proyecto interactivo Natalidad"
-       class="card-image">
-
-  <a href="https://natalidad.netlify.app/" target="_blank">
-    Ver proyecto →
-  </a>
-</article>
-
+    <!-- INTERACTIVE PROJECT -->
 
     <article class="project-card">
-      <h3>Videos destacados</h3>
+
+      <h3>Interactive Project</h3>
 
       <p>
-        Selección de proyectos audiovisuales, motion graphics, animación 3D y edición.
+        Interactive birth-rate visualization project developed through
+        data storytelling, Adobe Animate animations and web publishing using Netlify.
+      </p>
+
+      <p>
+        <strong>Tools:</strong>
+        Adobe Animate · HTML · CSS · JavaScript · Netlify
+      </p>
+
+      <img
+        src="infografía natalidad.jpeg"
+        alt="Interactive Project"
+        class="card-image">
+
+      <a
+        href="https://natalidad.netlify.app/"
+        target="_blank">
+        View project →
+      </a>
+
+    </article>
+
+
+    <!-- VIDEOS -->
+
+    <article class="project-card">
+
+      <h3>Featured Videos</h3>
+
+      <p>
+        Selection of audiovisual projects, motion graphics,
+        3D animation and video editing.
       </p>
 
       <div class="carousel">
+
         <iframe
           id="videoFrame"
           src="https://www.youtube.com/embed/A0DOnZBaeew"
-          title="Video destacado"
+          title="Featured Video"
           allowfullscreen>
         </iframe>
+
       </div>
 
       <div class="carousel-buttons">
-        <button onclick="previousVideo()">← Anterior</button>
-        <button onclick="nextVideo()">Siguiente →</button>
+        <button onclick="previousVideo()">← Previous</button>
+        <button onclick="nextVideo()">Next →</button>
       </div>
+
     </article>
 
 
-<article class="project-card">
-
-  <h3>Korea.net</h3>
-
-  <p>
-    Artículos destacados publicados como Honorary Reporter,
-    combinando escritura, comunicación cultural y edición visual.
-  </p>
-
-  <p id="koreaTitle" class="article-title">
-    4 series coreanas que te motivan a luchar por tus sueños
-  </p>
-
-  <div class="carousel">
-    <img
-      id="koreaFrame"
-      src="series motivacionales.jpeg"
-      alt="Artículo Korea.net"
-      class="card-image">
-  </div>
-
-  <a
-    id="koreaLink"
-    href="#"
-    target="_blank">
-    Ver artículo →
-  </a>
-
-  <div class="carousel-buttons">
-    <button onclick="previousArticle()">← Anterior</button>
-    <button onclick="nextArticle()">Siguiente →</button>
-  </div>
-
-</article>
-
+    <!-- KOREA.NET -->
 
     <article class="project-card">
-      <h3>Fotografía</h3>
+
+      <h3>Korea.net</h3>
 
       <p>
-        Registro visual personal enfocado en viajes, naturaleza, ciudad y sensibilidad estética.
+        Featured articles published as an Honorary Reporter,
+        combining writing, cultural communication and visual editing.
       </p>
 
-      <img src="fotografía.jpeg" alt="Fotografía" class="card-image">
+      <p id="koreaTitle" class="article-title">
+        4 Korean dramas that inspire you to pursue your dreams
+      </p>
 
-      <a href="https://www.instagram.com/framed.by.mari/" target="_blank">Ver fotografía →</a>
+      <div class="carousel">
+
+        <img
+          id="koreaFrame"
+          src="series motivacionales.jpeg"
+          alt="Korea.net Article"
+          class="card-image">
+
+      </div>
+
+      <a
+        id="koreaLink"
+        href="#"
+        target="_blank">
+        Read article →
+      </a>
+
+      <div class="carousel-buttons">
+        <button onclick="previousArticle()">← Previous</button>
+        <button onclick="nextArticle()">Next →</button>
+      </div>
+
     </article>
 
 
+    <!-- PHOTOGRAPHY -->
+
     <article class="project-card">
-      <h3>Instagram educativo</h3>
+
+      <h3>Photography</h3>
 
       <p>
-        Contenido visual y educativo sobre idioma y cultura coreana.
+        Personal visual work focused on travel, nature,
+        urban environments and aesthetic sensitivity.
       </p>
 
-      <img src="instagram coreano.jpeg" alt="Instagram Coreano" class="card-image">
+      <img
+        src="fotografía.jpeg"
+        alt="Photography"
+        class="card-image">
 
-      <a href="https://www.instagram.com/aprendiendo_coreano_juntos_/" target="_blank">Ver Instagram →</a>
+      <a
+        href="https://www.instagram.com/framed.by.mari/"
+        target="_blank">
+        View photography →
+      </a>
+
     </article>
 
 
+    <!-- EDUCATIONAL INSTAGRAM -->
+
     <article class="project-card">
+
+      <h3>Educational Instagram</h3>
+
+      <p>
+        Visual and educational content focused on Korean
+        language and culture.
+      </p>
+
+      <img
+        src="instagram coreano.jpeg"
+        alt="Educational Instagram"
+        class="card-image">
+
+      <a
+        href="https://www.instagram.com/aprendiendo_coreano_juntos_/"
+        target="_blank">
+        View Instagram →
+      </a>
+
+    </article>
+
+
+    <!-- TECHBE -->
+
+    <article class="project-card">
+
       <h3>TechBe Solutions</h3>
 
       <p>
-        Contenido digital y presencia visual orientada a soluciones tecnológicas.
+        Digital content and visual identity work
+        focused on technological solutions.
       </p>
 
-      <img src="instagram techbe.jpeg" alt="TechBe" class="card-image">
+      <img
+        src="instagram techbe.jpeg"
+        alt="TechBe"
+        class="card-image">
 
-      <a href="https://www.instagram.com/techbesolutions/" target="_blank">Ver Instagram →</a>
+      <a
+        href="https://www.instagram.com/techbesolutions/"
+        target="_blank">
+        View Instagram →
+      </a>
+
     </article>
 
 
+    <!-- BEHANCE -->
+
     <article class="project-card">
+
       <h3>Behance</h3>
 
       <p>
-        Selección de diseño digital, piezas visuales, 3D y proyectos creativos.
+        Selection of digital design, visual pieces,
+        3D work and creative projects.
       </p>
 
-      <img src="behance.png" alt="Behance" class="card-image">
+      <img
+        src="behance.png"
+        alt="Behance"
+        class="card-image">
 
-      <a href="https://www.behance.net/malemza24" target="_blank">Ver Behance →</a>
+      <a
+        href="https://www.behance.net/malemza24"
+        target="_blank">
+        View Behance →
+      </a>
+
     </article>
 
   </div>
+
 </section>
+
 
 <footer>
   <p>© 2026 Marianela Balderrama</p>
