@@ -6,12 +6,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(
-    135deg,
-    #d8c7e8,
-    #f3d6d2,
-    #f7efe5
-  );
+  background: linear-gradient(135deg, #d8c7e8, #f3d6d2, #f7efe5);
   text-align: center;
   padding: 90px 20px;
 }
@@ -47,8 +42,9 @@ body {
 }
 
 .hero-buttons a:hover,
-.carousel-buttons button:hover {
-  opacity: .85;
+.carousel-buttons button:hover,
+.project-card a:hover {
+  opacity: 0.85;
 }
 
 section {
@@ -64,11 +60,12 @@ h2 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 34px;
 }
 
-.project-card {
+.project-card,
+.about-card {
   background: white;
   border-radius: 22px;
   padding: 34px;
@@ -76,15 +73,19 @@ h2 {
 }
 
 .project-card h3 {
-  font-size: 24px;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
-.project-card p {
+.project-card p,
+.about-card p {
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-.project-card a {
+.project-card a,
+.about-card a {
   display: inline-block;
   margin-top: 18px;
   text-decoration: none;
@@ -98,14 +99,15 @@ h2 {
   object-fit: contain;
   background: #f7f2ec;
   border-radius: 18px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .carousel iframe {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
   border: none;
   border-radius: 18px;
+  margin-bottom: 24px;
 }
 
 .carousel-buttons {
@@ -131,24 +133,13 @@ h2 {
 }
 
 .about-card {
-  background: white;
-  border-radius: 22px;
-  padding: 36px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.07);
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
 }
 
-.about-card p {
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-.about-card a {
-  color: #7b5f75;
-  text-decoration: none;
-  font-weight: bold;
+.about-card h2 {
+  margin-top: 0;
 }
 
 footer {
@@ -158,12 +149,8 @@ footer {
   padding: 26px;
 }
 
-@media (max-width:900px) {
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 900px) {
+  .projects-grid,
   .about-card {
     grid-template-columns: 1fr;
   }
