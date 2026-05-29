@@ -211,6 +211,21 @@ h2 {
 .experience-card strong {
   color: #7b5f75;
 }
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  color: #7b5f75;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
 
 /* FOOTER */
 
