@@ -78,6 +78,15 @@ h2 {
   margin-bottom: 18px;
 }
 
+/* NUEVO — título dinámico de artículos Korea.net */
+.article-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 18px;
+  color: #2d2528;
+}
+
 .project-card p,
 .about-card p {
   font-size: 17px;
@@ -150,6 +159,7 @@ footer {
 }
 
 @media (max-width: 900px) {
+
   .projects-grid,
   .about-card {
     grid-template-columns: 1fr;
@@ -165,5 +175,10 @@ footer {
 
   .carousel-buttons {
     flex-direction: column;
+  }
+
+  /* Korea.net títulos mobile */
+  .article-title {
+    font-size: 20px;
   }
 }
