@@ -76,7 +76,8 @@ body {
 
 .hero-buttons a:hover,
 .carousel-buttons button:hover,
-.project-card a:hover {
+.project-card a:hover,
+.contact-inline:hover {
   opacity: 0.85;
 }
 
@@ -93,13 +94,7 @@ h2 {
   margin-bottom: 32px;
 }
 
-/* PROJECTS */
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 34px;
-}
+/* CARDS */
 
 .project-card,
 .about-card,
@@ -131,6 +126,79 @@ h2 {
   text-decoration: none;
   font-weight: bold;
   color: #7b5f75;
+}
+
+/* ABOUT */
+
+.about-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-card h2 {
+  margin-top: 0;
+}
+
+/* CONTACT */
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.contact-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #7b5f75;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+  transform: translateY(2px);
+}
+
+.contact-divider {
+  color: #7b5f75;
+  opacity: .45;
+  font-size: 18px;
+}
+
+/* EXPERIENCE */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+}
+
+.experience-card strong {
+  color: #7b5f75;
+}
+
+/* PROJECTS */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
 }
 
 /* ARTICLE TITLES */
@@ -171,86 +239,6 @@ h2 {
   margin-top: 18px;
 }
 
-/* ARTICLE LINKS */
-
-.article-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.article-links a {
-  background: #f3d6d2;
-  color: #2d2528;
-  padding: 8px 14px;
-  border-radius: 20px;
-  margin-top: 0;
-}
-
-/* ABOUT */
-
-.about-card {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
-}
-
-.about-card h2 {
-  margin-top: 0;
-}
-
-/* EXPERIENCE */
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 34px;
-}
-
-.experience-card strong {
-  color: #7b5f75;
-}
-#contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 12px;
-}
-
-.contact-inline {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #7b5f75;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.contact-inline:hover {
-  opacity: .8;
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-
-.contact-divider {
-  color: #7b5f75;
-  opacity: .45;
-  font-size: 18px;
-}
-
 /* FOOTER */
 
 footer {
@@ -284,5 +272,14 @@ footer {
 
   .article-title {
     font-size: 20px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-divider {
+    display: none;
   }
 }
