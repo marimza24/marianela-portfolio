@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marianela Balderrama | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Marianela Balderrama</h1>
+  <p>Diseño digital · Animación · Visual storytelling · Proyectos interactivos</p>
+
+  <div class="hero-buttons">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Ver proyectos</a>
+  </div>
+</header>
+
+<section id="sobre-mi">
+  <div class="about-card">
+    <div>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy una creativa digital argentina con experiencia en diseño visual,
+        animación, comunicación cultural, contenido educativo y proyectos interactivos.
+      </p>
+      <p>
+        Me interesa crear piezas que combinen narrativa, sensibilidad estética
+        y tecnología, especialmente en áreas vinculadas al audiovisual,
+        la cultura coreana, la educación y el storytelling visual.
+      </p>
+    </div>
+
+    <div id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Email:
+        <a href="mailto:malemza24@hotmail.com">malemza24@hotmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos destacados</h2>
+
+  <div class="projects-grid">
+
+<article class="project-card">
+  <h3>Proyecto interactivo</h3>
+
+  <p>
+    Proyecto interactivo sobre natalidad, desarrollado con visualización de datos,
+    animaciones creadas en Adobe Animate y publicación web en Netlify.
+  </p>
+
+  <p>
+    <strong>Herramientas:</strong>
+    Adobe Animate · HTML · CSS · JavaScript · Netlify
+  </p>
+
+  <img src="infografía natalidad.jpeg"
+       alt="Proyecto interactivo Natalidad"
+       class="card-image">
+
+  <a href="https://natalidad.netlify.app/" target="_blank">
+    Ver proyecto →
+  </a>
+</article>
+
+
+    <article class="project-card">
+      <h3>Videos destacados</h3>
+
+      <p>
+        Selección de proyectos audiovisuales, motion graphics, animación 3D y edición.
+      </p>
+
+      <div class="carousel">
+        <iframe
+          id="videoFrame"
+          src="https://www.youtube.com/embed/A0DOnZBaeew"
+          title="Video destacado"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="previousVideo()">← Anterior</button>
+        <button onclick="nextVideo()">Siguiente →</button>
+      </div>
+    </article>
+
+
+<article class="project-card">
+
+  <h3>Korea.net</h3>
+
+  <p>
+    Artículos destacados publicados como Honorary Reporter,
+    combinando escritura, comunicación cultural y edición visual.
+  </p>
+
+  <p id="koreaTitle" class="article-title">
+    4 series coreanas que te motivan a luchar por tus sueños
+  </p>
+
+  <div class="carousel">
+    <img
+      id="koreaFrame"
+      src="series motivacionales.jpeg"
+      alt="Artículo Korea.net"
+      class="card-image">
+  </div>
+
+  <a
+    id="koreaLink"
+    href="#"
+    target="_blank">
+    Ver artículo →
+  </a>
+
+  <div class="carousel-buttons">
+    <button onclick="previousArticle()">← Anterior</button>
+    <button onclick="nextArticle()">Siguiente →</button>
+  </div>
+
+</article>
+
+
+    <article class="project-card">
+      <h3>Fotografía</h3>
+
+      <p>
+        Registro visual personal enfocado en viajes, naturaleza, ciudad y sensibilidad estética.
+      </p>
+
+      <img src="fotografía.jpeg" alt="Fotografía" class="card-image">
+
+      <a href="https://www.instagram.com/framed.by.mari/" target="_blank">Ver fotografía →</a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Instagram educativo</h3>
+
+      <p>
+        Contenido visual y educativo sobre idioma y cultura coreana.
+      </p>
+
+      <img src="instagram coreano.jpeg" alt="Instagram Coreano" class="card-image">
+
+      <a href="https://www.instagram.com/aprendiendo_coreano_juntos_/" target="_blank">Ver Instagram →</a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>TechBe Solutions</h3>
+
+      <p>
+        Contenido digital y presencia visual orientada a soluciones tecnológicas.
+      </p>
+
+      <img src="instagram techbe.jpeg" alt="TechBe" class="card-image">
+
+      <a href="https://www.instagram.com/techbesolutions/" target="_blank">Ver Instagram →</a>
+    </article>
+
+
+    <article class="project-card">
+      <h3>Behance</h3>
+
+      <p>
+        Selección de diseño digital, piezas visuales, 3D y proyectos creativos.
+      </p>
+
+      <img src="behance.png" alt="Behance" class="card-image">
+
+      <a href="https://www.behance.net/malemza24" target="_blank">Ver Behance →</a>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Marianela Balderrama</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
