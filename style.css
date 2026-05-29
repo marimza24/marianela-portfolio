@@ -11,6 +11,8 @@ body {
   padding: 90px 20px;
 }
 
+/* LANGUAGE */
+
 .language-switch {
   display: flex;
   justify-content: center;
@@ -40,6 +42,8 @@ body {
   opacity: .35;
 }
 
+/* HERO */
+
 .hero h1 {
   font-size: 56px;
   margin-bottom: 12px;
@@ -51,6 +55,10 @@ body {
 
 .hero-buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .hero-buttons a,
@@ -66,15 +74,13 @@ body {
   cursor: pointer;
 }
 
-.hero-buttons a {
-  margin: 10px;
-}
-
 .hero-buttons a:hover,
 .carousel-buttons button:hover,
 .project-card a:hover {
   opacity: 0.85;
 }
+
+/* GENERAL */
 
 section {
   max-width: 1400px;
@@ -87,6 +93,8 @@ h2 {
   margin-bottom: 32px;
 }
 
+/* PROJECTS */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -94,29 +102,24 @@ h2 {
 }
 
 .project-card,
-.about-card {
+.about-card,
+.experience-card {
   background: white;
   border-radius: 22px;
   padding: 34px;
   box-shadow: 0 10px 30px rgba(0,0,0,.07);
 }
 
-.project-card h3 {
+.project-card h3,
+.experience-card h3 {
   font-size: 26px;
   margin-top: 0;
   margin-bottom: 18px;
 }
 
-.article-title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.35;
-  margin: 0 0 18px;
-  color: #2d2528;
-}
-
 .project-card p,
-.about-card p {
+.about-card p,
+.experience-card p {
   font-size: 17px;
   line-height: 1.55;
 }
@@ -129,6 +132,18 @@ h2 {
   font-weight: bold;
   color: #7b5f75;
 }
+
+/* ARTICLE TITLES */
+
+.article-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 18px;
+  color: #2d2528;
+}
+
+/* IMAGES */
 
 .card-image {
   width: 100%;
@@ -147,12 +162,16 @@ h2 {
   margin: 20px 0 10px;
 }
 
+/* BUTTONS */
+
 .carousel-buttons {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   margin-top: 18px;
 }
+
+/* ARTICLE LINKS */
 
 .article-links {
   display: flex;
@@ -169,6 +188,8 @@ h2 {
   margin-top: 0;
 }
 
+/* ABOUT */
+
 .about-card {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -179,6 +200,20 @@ h2 {
   margin-top: 0;
 }
 
+/* EXPERIENCE */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+}
+
+.experience-card strong {
+  color: #7b5f75;
+}
+
+/* FOOTER */
+
 footer {
   background: #2d2528;
   color: white;
@@ -186,9 +221,13 @@ footer {
   padding: 26px;
 }
 
+/* MOBILE */
+
 @media (max-width: 900px) {
+
   .projects-grid,
-  .about-card {
+  .about-card,
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 
