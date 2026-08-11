@@ -37,9 +37,22 @@
 <header class="hero">
 
   <div class="language-switch">
-    <a href="index.html">ES</a>
+
+    <a
+      href="index.html"
+      data-event="language_es">
+      ES
+    </a>
+
     <span>·</span>
-    <a href="en.html" class="active">EN</a>
+
+    <a
+      href="en.html"
+      class="active"
+      data-event="language_en">
+      EN
+    </a>
+
   </div>
 
   <h1>Marianela Balderrama</h1>
@@ -50,17 +63,22 @@
 
   <div class="hero-buttons">
 
-    <a href="#sobre-mi">
+    <a
+      href="#sobre-mi"
+      data-event="nav_about">
       About
     </a>
 
-    <a href="#proyectos">
+    <a
+      href="#proyectos"
+      data-event="nav_projects">
       Projects
     </a>
 
     <a
       href="Marianela_Balderrama_CV_Flagship_EN.pdf"
-      target="_blank">
+      target="_blank"
+      data-event="click_cv_en">
       Download Resume
     </a>
 
@@ -103,7 +121,8 @@
 
         <a
           href="mailto:malemza24@hotmail.com"
-          class="contact-inline">
+          class="contact-inline"
+          data-event="click_email">
 
           <span>
             malemza24@hotmail.com
@@ -123,7 +142,8 @@
         <a
           href="https://www.linkedin.com/in/marianela-balderrama-0708612a2/"
           target="_blank"
-          class="contact-inline">
+          class="contact-inline"
+          data-event="click_linkedin">
 
           <span>
             LinkedIn
@@ -145,108 +165,11 @@
 </section>
 
 
-<!-- EXPERIENCE -->
-
-<section id="experience">
-
-  <h2>
-    Professional Experience
-  </h2>
-
-  <div class="experience-grid">
-
-
-    <article class="experience-card">
-
-      <h3>
-        Marimu
-      </h3>
-
-      <p>
-        <strong>
-          Game Localization · Spanish Adaptation
-        </strong>
-      </p>
-
-      <p>
-        Localization support, cultural adaptation and content review
-        for Spanish-speaking audiences.
-      </p>
-
-    </article>
-
-
-    <article class="experience-card">
-
-      <h3>
-        Korea.net
-      </h3>
-
-      <p>
-        <strong>
-          Honorary Reporter · International Communication
-        </strong>
-      </p>
-
-      <p>
-        Article writing, cultural communication and editorial
-        content creation connected to Korea.
-      </p>
-
-    </article>
-
-
-    <article class="experience-card">
-
-      <h3>
-        YouPrint
-      </h3>
-
-      <p>
-        <strong>
-          Client Communication · Workflow Support
-        </strong>
-      </p>
-
-      <p>
-        Customer communication, workflow organization and support
-        for digital work processes.
-      </p>
-
-    </article>
-
-
-    <article class="experience-card">
-
-      <h3>
-        Judicial Experience
-      </h3>
-
-      <p>
-        <strong>
-          Writing · Analysis · Documentation
-        </strong>
-      </p>
-
-      <p>
-        Formal writing, documentation analysis and information
-        management within administrative and legal environments.
-      </p>
-
-    </article>
-
-  </div>
-
-</section>
-
-
 <!-- PROJECTS -->
 
 <section id="proyectos">
 
-  <h2>
-    Featured Projects
-  </h2>
+  <h2>Featured Projects</h2>
 
   <div class="projects-grid">
 
@@ -255,9 +178,7 @@
 
     <article class="project-card">
 
-      <h3>
-        Interactive Project
-      </h3>
+      <h3>Interactive Project</h3>
 
       <p>
         Interactive birth-rate visualization project developed through
@@ -277,7 +198,8 @@
 
       <a
         href="https://natalidad.netlify.app/"
-        target="_blank">
+        target="_blank"
+        data-event="click_natalidad">
         View project →
       </a>
 
@@ -288,9 +210,7 @@
 
     <article class="project-card">
 
-      <h3>
-        Hanori
-      </h3>
+      <h3>Hanori</h3>
 
       <p>
         Educational Android app designed to support Korean vocabulary
@@ -311,7 +231,8 @@
 
       <a
         href="https://hanori.netlify.app/"
-        target="_blank">
+        target="_blank"
+        data-event="click_hanori">
         View project →
       </a>
 
@@ -322,9 +243,7 @@
 
     <article class="project-card">
 
-      <h3>
-        Featured Videos
-      </h3>
+      <h3>Featured Videos</h3>
 
       <p>
         Selection of audiovisual projects, motion graphics,
@@ -345,11 +264,15 @@
 
       <div class="carousel-buttons">
 
-        <button onclick="previousVideo()">
+        <button
+          onclick="previousVideo()"
+          data-event="video_previous">
           ← Previous
         </button>
 
-        <button onclick="nextVideo()">
+        <button
+          onclick="nextVideo()"
+          data-event="video_next">
           Next →
         </button>
 
@@ -362,9 +285,7 @@
 
     <article class="project-card">
 
-      <h3>
-        Korea.net
-      </h3>
+      <h3>Korea.net</h3>
 
       <p>
         Featured articles published as an Honorary Reporter,
@@ -393,17 +314,22 @@
       <a
         id="koreaLink"
         href="#"
-        target="_blank">
+        target="_blank"
+        data-event="click_koreanet">
         Read article →
       </a>
 
       <div class="carousel-buttons">
 
-        <button onclick="previousArticle()">
+        <button
+          onclick="previousArticle()"
+          data-event="article_previous">
           ← Previous
         </button>
 
-        <button onclick="nextArticle()">
+        <button
+          onclick="nextArticle()"
+          data-event="article_next">
           Next →
         </button>
 
@@ -416,13 +342,11 @@
 
     <article class="project-card">
 
-      <h3>
-        Photography
-      </h3>
+      <h3>Photography</h3>
 
       <p>
-        Personal visual work focused on travel, nature,
-        urban environments and aesthetic sensitivity.
+        Personal visual work focused on travel,
+        nature, urban environments and aesthetic sensitivity.
       </p>
 
       <img
@@ -433,7 +357,8 @@
 
       <a
         href="https://www.instagram.com/framed.by.mari/"
-        target="_blank">
+        target="_blank"
+        data-event="click_photography">
         View photography →
       </a>
 
@@ -444,9 +369,7 @@
 
     <article class="project-card">
 
-      <h3>
-        Educational Instagram
-      </h3>
+      <h3>Educational Instagram</h3>
 
       <p>
         Visual and educational content focused on Korean
@@ -461,7 +384,8 @@
 
       <a
         href="https://www.instagram.com/aprendiendo_coreano_juntos_/"
-        target="_blank">
+        target="_blank"
+        data-event="click_instagram_korean">
         View Instagram →
       </a>
 
@@ -472,9 +396,7 @@
 
     <article class="project-card">
 
-      <h3>
-        TechBe Solutions
-      </h3>
+      <h3>TechBe Solutions</h3>
 
       <p>
         Digital content and visual identity work
@@ -489,7 +411,8 @@
 
       <a
         href="https://www.instagram.com/techbesolutions/"
-        target="_blank">
+        target="_blank"
+        data-event="click_techbe">
         View Instagram →
       </a>
 
@@ -500,9 +423,7 @@
 
     <article class="project-card">
 
-      <h3>
-        Behance
-      </h3>
+      <h3>Behance</h3>
 
       <p>
         Selection of digital design, visual pieces,
@@ -517,9 +438,95 @@
 
       <a
         href="https://www.behance.net/malemza24"
-        target="_blank">
+        target="_blank"
+        data-event="click_behance">
         View Behance →
       </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+  <h2>Professional Experience</h2>
+
+  <div class="experience-grid">
+
+
+    <article class="experience-card">
+
+      <h3>Marimu</h3>
+
+      <p>
+        <strong>
+          Game Localization · Spanish Adaptation
+        </strong>
+      </p>
+
+      <p>
+        Localization support, cultural adaptation and content review
+        for Spanish-speaking audiences.
+      </p>
+
+    </article>
+
+
+    <article class="experience-card">
+
+      <h3>Korea.net</h3>
+
+      <p>
+        <strong>
+          Honorary Reporter · International Communication
+        </strong>
+      </p>
+
+      <p>
+        Article writing, cultural communication and editorial
+        content creation connected to Korea.
+      </p>
+
+    </article>
+
+
+    <article class="experience-card">
+
+      <h3>YouPrint</h3>
+
+      <p>
+        <strong>
+          Client Communication · Workflow Support
+        </strong>
+      </p>
+
+      <p>
+        Customer communication, workflow organization and support
+        for digital work processes.
+      </p>
+
+    </article>
+
+
+    <article class="experience-card">
+
+      <h3>Judicial Experience</h3>
+
+      <p>
+        <strong>
+          Writing · Analysis · Documentation
+        </strong>
+      </p>
+
+      <p>
+        Formal writing, documentation analysis and information
+        management within administrative and legal environments.
+      </p>
 
     </article>
 
