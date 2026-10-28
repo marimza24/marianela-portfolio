@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Marianela Balderrama | Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio de Marianela Balderrama: diseño digital, animación, visual storytelling, localización, fotografía y proyectos interactivos.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47YRFVXNX"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-E47YRFVXNX');
+  </script>
+</head>
+
+
+<body>
+
+<!-- HERO -->
+
+<header class="hero">
+
+  <div class="language-switch">
+
+    <a
+      href="index.html"
+      class="active"
+      data-event="language_es">
+      ES
+    </a>
+
+    <span>·</span>
+
+    <a
+      href="en.html"
+      data-event="language_en">
+      EN
+    </a>
+
+  </div>
+
+  <h1>Marianela Balderrama</h1>
+
+  <p>
+    Diseño digital · Animación · Visual storytelling · Proyectos interactivos
+  </p>
+
+  <div class="hero-buttons">
+
+    <a
+      href="#sobre-mi"
+      data-event="nav_about">
+      Sobre mí
+    </a>
+
+    <a
+      href="#proyectos"
+      data-event="nav_projects">
+      Ver proyectos
+    </a>
+
+    <a
+      href="Marianela_Balderrama_CV_Principal_ES.pdf"
+      target="_blank"
+      data-event="click_cv_es">
+      Descargar CV
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- SOBRE MÍ -->
+
+<section id="sobre-mi">
+
+  <div class="about-card">
+
+    <div>
+
+      <h2>Sobre mí</h2>
+
+      <p>
+        Soy una creativa digital argentina con experiencia en diseño visual,
+        animación, comunicación cultural, contenido educativo y proyectos interactivos.
+      </p>
+
+      <p>
+        Me interesa crear piezas que combinen narrativa, sensibilidad estética
+        y tecnología, especialmente en áreas vinculadas al audiovisual,
+        la cultura coreana, la educación y el storytelling visual.
+      </p>
+
+    </div>
+
+
+    <!-- CONTACTO -->
+
+    <div id="contacto">
+
+      <h2>Contacto</h2>
+
+      <div class="contact-row">
+
+        <a
+          href="mailto:malemza24@hotmail.com"
+          class="contact-inline"
+          data-event="click_email">
+
+          <span>
+            malemza24@hotmail.com
+          </span>
+
+          <img
+            src="iconomail.png"
+            alt="Email"
+            class="contact-icon">
+
+        </a>
+
+        <span class="contact-divider">
+          ·
+        </span>
+
+        <a
+          href="https://www.linkedin.com/in/marianela-balderrama-0708612a2/"
+          target="_blank"
+          class="contact-inline"
+          data-event="click_linkedin">
+
+          <span>
+            LinkedIn
+          </span>
+
+          <img
+            src="icono in.png"
+            alt="LinkedIn"
+            class="contact-icon">
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROYECTOS -->
+
+<section id="proyectos">
+
+  <h2>Proyectos destacados</h2>
+
+  <div class="projects-grid">
+
+
+    <!-- NATALIDAD -->
+
+    <article class="project-card">
+
+      <h3>Proyecto interactivo</h3>
+
+      <p>
+        Proyecto interactivo sobre natalidad, desarrollado con visualización de datos,
+        animaciones creadas en Adobe Animate y publicación web en Netlify.
+      </p>
+
+      <p>
+        <strong>Herramientas:</strong>
+        Adobe Animate · HTML · CSS · JavaScript · Netlify
+      </p>
+
+      <img
+        src="infografía natalidad.jpeg"
+        alt="Proyecto interactivo sobre natalidad"
+        class="card-image"
+        loading="lazy">
+
+      <a
+        href="https://natalidad.netlify.app/"
+        target="_blank"
+        data-event="click_natalidad">
+        Ver proyecto →
+      </a>
+
+    </article>
+
+    <!-- VIDEOS -->
+
+    <article class="project-card">
+
+      <h3>Videos destacados</h3>
+
+      <p>
+        Selección de proyectos audiovisuales, motion graphics,
+        animación 3D y edición.
+      </p>
+
+      <div class="carousel">
+
+        <iframe
+          id="videoFrame"
+          src="https://www.youtube.com/embed/A0DOnZBaeew"
+          title="Video destacado"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <div class="carousel-buttons">
+
+        <button
+          onclick="previousVideo()"
+          data-event="video_previous">
+          ← Anterior
+        </button>
+
+        <button
+          onclick="nextVideo()"
+          data-event="video_next">
+          Siguiente →
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- KOREA.NET -->
+
+    <article class="project-card">
+
+      <h3>Korea.net</h3>
+
+      <p>
+        Artículos destacados publicados como Honorary Reporter,
+        combinando escritura, comunicación cultural y edición visual.
+      </p>
+
+      <p
+        id="koreaTitle"
+        class="article-title">
+
+        4 series coreanas que te motivan a luchar por tus sueños
+
+      </p>
+
+      <div class="carousel">
+
+        <img
+          id="koreaFrame"
+          src="series motivacionales.jpeg"
+          alt="Artículo publicado en Korea.net"
+          class="card-image"
+          loading="lazy">
+
+      </div>
+
+      <a
+        id="koreaLink"
+        href="#"
+        target="_blank"
+        data-event="click_koreanet">
+        Ver artículo →
+      </a>
+
+      <div class="carousel-buttons">
+
+        <button
+          onclick="previousArticle()"
+          data-event="article_previous">
+          ← Anterior
+        </button>
+
+        <button
+          onclick="nextArticle()"
+          data-event="article_next">
+          Siguiente →
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- FOTOGRAFÍA -->
+
+    <article class="project-card">
+
+      <h3>Fotografía</h3>
+
+      <p>
+        Registro visual personal enfocado en viajes,
+        naturaleza, ciudad y sensibilidad estética.
+      </p>
+
+      <img
+        src="fotografía.jpeg"
+        alt="Portfolio fotográfico"
+        class="card-image"
+        loading="lazy">
+
+      <a
+        href="https://www.instagram.com/framed.by.mari/"
+        target="_blank"
+        data-event="click_photography">
+        Ver fotografía →
+      </a>
+
+    </article>
+
+
+    <!-- TECHBE -->
+
+    <article class="project-card">
+
+      <h3>TechBe Solutions</h3>
+
+      <p>
+        Contenido digital y presencia visual orientada
+        a soluciones tecnológicas.
+      </p>
+
+      <img
+        src="instagram techbe.jpeg"
+        alt="Contenido digital para TechBe Solutions"
+        class="card-image"
+        loading="lazy">
+
+      <a
+        href="https://www.instagram.com/techbesolutions/"
+        target="_blank"
+        data-event="click_techbe">
+        Ver Instagram →
+      </a>
+
+    </article>
+
+
+    <!-- BEHANCE -->
+
+    <article class="project-card">
+
+      <h3>Behance</h3>
+
+      <p>
+        Selección de diseño digital, piezas visuales,
+        3D y proyectos creativos.
+      </p>
+
+      <img
+        src="behance.png"
+        alt="Portfolio en Behance"
+        class="card-image"
+        loading="lazy">
+
+      <a
+        href="https://www.behance.net/malemza24"
+        target="_blank"
+        data-event="click_behance">
+        Ver Behance →
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- EXPERIENCIA -->
+
+<section id="experiencia">
+
+  <h2>Experiencia profesional</h2>
+
+  <div class="experience-grid">
+
+
+    <article class="experience-card">
+
+      <h3>Marimu</h3>
+
+      <p>
+        <strong>
+          Localización de videojuegos · Adaptación al español
+        </strong>
+      </p>
+
+      <p>
+        Apoyo en localización de videojuegos, adaptación cultural y revisión
+        de contenido para audiencias hispanohablantes.
+      </p>
+
+    </article>
+
+
+    <article class="experience-card">
+
+      <h3>Korea.net</h3>
+
+      <p>
+        <strong>
+          Honorary Reporter · Comunicación internacional
+        </strong>
+      </p>
+
+      <p>
+        Redacción de artículos, comunicación cultural y creación de contenido
+        editorial vinculado a Corea.
+      </p>
+
+    </article>
+
+
+    <article class="experience-card">
+
+      <h3>YouPrint</h3>
+
+      <p>
+        <strong>
+          Comunicación con clientes · Organización de procesos
+        </strong>
+      </p>
+
+      <p>
+        Comunicación con clientes, organización de pedidos y apoyo en procesos
+        de trabajo digital.
+      </p>
+
+    </article>
+
+
+    <article class="experience-card">
+
+      <h3>Experiencia judicial</h3>
+
+      <p>
+        <strong>
+          Escritura · Análisis · Documentación
+        </strong>
+      </p>
+
+      <p>
+        Escritura formal, análisis de documentación y gestión de información
+        en contexto administrativo/legal.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © <span id="year"></span> Marianela Balderrama
+  </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+
+</html>
+```
