@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f2ec;
+  color: #2d2528;
+}
+
+.hero {
+  background: linear-gradient(135deg, #d8c7e8, #f3d6d2, #f7efe5);
+  text-align: center;
+  padding: 90px 20px;
+}
+
+/* LANGUAGE */
+
+.language-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+
+.language-switch a {
+  color: #7b5f75;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.language-switch a:hover {
+  color: #2d2528;
+}
+
+.language-switch .active {
+  color: #2d2528;
+}
+
+.language-switch span {
+  opacity: .35;
+}
+
+/* HERO */
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-buttons a,
+.carousel-buttons button {
+  display: inline-block;
+  background: #2d2528;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-buttons a:hover,
+.carousel-buttons button:hover,
+.project-card a:hover,
+.contact-inline:hover {
+  opacity: 0.85;
+}
+
+/* GENERAL */
+
+section {
+  max-width: 1400px;
+  margin: auto;
+  padding: 70px 25px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+/* CARDS */
+
+.project-card,
+.about-card,
+.experience-card {
+  background: white;
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.07);
+}
+
+.project-card h3,
+.experience-card h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.project-card p,
+.about-card p,
+.experience-card p {
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.project-card a,
+.about-card a {
+  display: inline-block;
+  margin-top: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #7b5f75;
+}
+
+/* ABOUT */
+
+.about-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-card h2 {
+  margin-top: 0;
+}
+
+/* CONTACT */
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.contact-inline {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center;
+  gap: 8px;
+  color: #7b5f75;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(0);
+}
+
+.contact-divider {
+  color: #7b5f75;
+  opacity: .45;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* EXPERIENCE */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+}
+
+.experience-card strong {
+  color: #7b5f75;
+}
+
+/* PROJECTS */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+}
+
+/* ARTICLE TITLES */
+
+.article-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 18px;
+  color: #2d2528;
+}
+
+/* IMAGES */
+
+.card-image {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #f7f2ec;
+  border-radius: 18px;
+  margin: 20px 0 10px;
+}
+
+.carousel iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 18px;
+  margin: 20px 0 10px;
+}
+
+/* BUTTONS */
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #2d2528;
+  color: white;
+  text-align: center;
+  padding: 26px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .projects-grid,
+  .about-card,
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .card-image {
+    height: 230px;
+  }
+
+  .carousel-buttons {
+    flex-direction: column;
+  }
+
+  .article-title {
+    font-size: 20px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-divider {
+    display: none;
+  }
+}
